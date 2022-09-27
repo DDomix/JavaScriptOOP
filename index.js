@@ -26,9 +26,22 @@ class User{
     login(usernev,pass){
         return false;
     }
+    static atlageletkor(users){
+        let sum=0;
+        for(let u of users){
+            sum+=u.#eletkor;
+        }
+        return sum/ users.lenght;
+    }
 }
 let user=new User("User2",19)
-
+let users=[
+    user,
+    new User("User5",70),
+    new User("User6",36),
+];
+let atlag=User.atlageletkor(userek);
+console.log(atlag);
 console.log(valami instanceof User)
 console.log(user instanceof User)
 //user.eletkor("kutya");
